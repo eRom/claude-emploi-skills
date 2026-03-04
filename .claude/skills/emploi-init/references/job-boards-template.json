@@ -1,0 +1,77 @@
+{
+  "last_updated": null,
+  "boards": [
+    {
+      "name": "Indeed France",
+      "url": "https://www.indeed.fr",
+      "search_pattern": "https://www.indeed.fr/emplois?q={keywords}&l={location}",
+      "reliability": "medium",
+      "notes": "Offres parfois expirees (HTTP 410). Toujours verifier le statut avant de candidater.",
+      "last_success": null,
+      "fetch_method": "WebSearch preferred — WebFetch souvent bloque"
+    },
+    {
+      "name": "Welcome to the Jungle",
+      "url": "https://www.welcometothejungle.com",
+      "search_pattern": "https://www.welcometothejungle.com/fr/jobs?query={keywords}&aroundQuery={location}",
+      "reliability": "high",
+      "notes": "Fiable, contenu bien structure. Bon pour les ESN et startups.",
+      "last_success": null,
+      "fetch_method": "WebFetch OK"
+    },
+    {
+      "name": "LinkedIn Jobs",
+      "url": "https://www.linkedin.com/jobs",
+      "search_pattern": "site:linkedin.com/jobs {keywords} {location}",
+      "reliability": "medium",
+      "notes": "WebFetch bloque (auth requise). Utiliser WebSearch avec site:linkedin.com/jobs.",
+      "last_success": null,
+      "fetch_method": "WebSearch only"
+    },
+    {
+      "name": "Emploi Territorial",
+      "url": "https://www.emploi-territorial.fr",
+      "search_pattern": "https://www.emploi-territorial.fr/recherche-offres?keyword={keywords}&departement={departement}",
+      "reliability": "high",
+      "notes": "Source officielle pour la Fonction Publique Territoriale.",
+      "last_success": null,
+      "fetch_method": "WebFetch OK"
+    },
+    {
+      "name": "Place de l'emploi public",
+      "url": "https://www.place-emploi-public.gouv.fr",
+      "search_pattern": "https://www.place-emploi-public.gouv.fr/offre-emploi?keyword={keywords}&localisation={departement}",
+      "reliability": "high",
+      "notes": "Source officielle FPH + FPT + FPE. Offres a jour.",
+      "last_success": null,
+      "fetch_method": "WebFetch OK"
+    },
+    {
+      "name": "APEC",
+      "url": "https://www.apec.fr",
+      "search_pattern": "https://www.apec.fr/candidat/recherche-emploi.html/emploi?motsCles={keywords}&lieu={location}",
+      "reliability": "high",
+      "notes": "Cadres et ingenieurs. Bon pour les postes Architecte SI et Chef de Projet.",
+      "last_success": null,
+      "fetch_method": "WebSearch preferred"
+    },
+    {
+      "name": "HelloWork (ex-RegionsJob)",
+      "url": "https://www.hellowork.com",
+      "search_pattern": "https://www.hellowork.com/fr-fr/emploi/recherche.html?k={keywords}&l={location}",
+      "reliability": "medium",
+      "notes": "Beaucoup de doublons avec Indeed. Utile en complement.",
+      "last_success": null,
+      "fetch_method": "WebFetch OK"
+    },
+    {
+      "name": "Cadremploi",
+      "url": "https://www.cadremploi.fr",
+      "search_pattern": "https://www.cadremploi.fr/emploi/liste_offres?motscles={keywords}&ville={location}",
+      "reliability": "medium",
+      "notes": "Cadres et managers. Complement de l'APEC.",
+      "last_success": null,
+      "fetch_method": "WebFetch OK"
+    }
+  ]
+}
