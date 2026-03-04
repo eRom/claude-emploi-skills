@@ -2,7 +2,7 @@
 
 Skills Claude Code pour automatiser une recherche d'emploi structuree : veille multi-agents, arsenal candidature, scoring, et generation de documents.
 
-![Infographie](https://github.com/eRom/claude-emploi-skills/blob/main/images/emploi-skills-workflow.png)
+![Infographie](emploi-skills-workflow.png)
 
 ## Prerequis
 
