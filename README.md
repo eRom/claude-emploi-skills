@@ -2,6 +2,8 @@
 
 Skills Claude Code pour automatiser une recherche d'emploi structuree : veille multi-agents, arsenal candidature, scoring, et generation de documents.
 
+![Infographie](https://github.com/eRom/claude-emploi-skills/blob/main/images/emploi-skills-workflow.png)
+
 ## Prerequis
 
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installe et configure
@@ -10,7 +12,7 @@ Skills Claude Code pour automatiser une recherche d'emploi structuree : veille m
 
 ```bash
 # 1. Cloner le repo
-git clone https://github.com/VOTRE_USER/claude-emploi-skills.git
+git clone https://github.com/eRom/claude-emploi-skills.git
 
 # 2. Copier les skills dans votre projet
 cp -r claude-emploi-skills/.claude/skills/emploi-* VOTRE_PROJET/.claude/skills/
