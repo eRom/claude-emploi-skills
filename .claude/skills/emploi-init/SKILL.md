@@ -182,7 +182,7 @@ Si `.claude/skills/emploi-veille/SKILL.md` existe, mettre a jour la section "Var
 
 **Si le fichier n'existe pas** → ignorer cette etape (la skill veille sera configuree manuellement).
 
-> **Note :** Les skills `/veille`, `/new-cible` et leurs agent prompts sont generiques — ils lisent `profil-candidat.md` et `grille-scoring.md` au runtime. Seules les variables par defaut de `veille/SKILL.md` doivent etre mises a jour ici.
+> **Note :** Les skills `/veille`, `/emploi-cible` et leurs agent prompts sont generiques — ils lisent `profil-candidat.md` et `grille-scoring.md` au runtime. Seules les variables par defaut de `veille/SKILL.md` doivent etre mises a jour ici.
 
 ---
 

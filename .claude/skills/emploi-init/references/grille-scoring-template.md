@@ -19,8 +19,8 @@
 
 | Score | Verdict | Action |
 |-------|---------|--------|
-| **10-12** | Cible prioritaire | `/new-cible` immediat |
-| **7-9** | Cible prometteuse | Approfondir — candidat `/new-cible` |
+| **10-12** | Cible prioritaire | `/emploi-cible` immediat |
+| **7-9** | Cible prometteuse | Approfondir — candidat `/emploi-cible` |
 | **4-6** | Cible secondaire | Surveiller |
 | **0-3** | Hors cible | Ignorer |
 

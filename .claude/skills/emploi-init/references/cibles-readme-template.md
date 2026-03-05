@@ -1,7 +1,7 @@
 # Veille & Decouverte de Cibles Emploi
 
-> **Objectif :** Decouvrir des opportunites, les scorer, recommander `/new-cible [slug]`.
-> **Hors perimetre :** Recherche approfondie, CV, LM, pitchs, contacts (= `/new-cible`).
+> **Objectif :** Decouvrir des opportunites, les scorer, recommander `/emploi-cible [slug]`.
+> **Hors perimetre :** Recherche approfondie, CV, LM, pitchs, contacts (= `/emploi-cible`).
 
 ---
 
@@ -24,7 +24,7 @@
                        ▼
             rapport-veille-YYYY-MM-DD.md
                        │
-              "Lance /new-cible X"
+              "Lance /emploi-cible X"
 ```
 
 ---
@@ -32,11 +32,11 @@
 ## Integration workflow
 
 ```
-cibles/YYYY-MM-DD/rapport-veille-*.md  -->  "/new-cible [slug]"  -->  candidatures/[slug]/
+cibles/YYYY-MM-DD/rapport-veille-*.md  -->  "/emploi-cible [slug]"  -->  candidatures/[slug]/
 (decouverte)                     (recherche + arsenal)      (CV, LM, pitch, suivi)
 ```
 
-Le rapport de veille est **en amont** de `/new-cible`. Il decouvre, `/new-cible` traite.
+Le rapport de veille est **en amont** de `/emploi-cible`. Il decouvre, `/emploi-cible` traite.
 
 ---
 

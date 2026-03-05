@@ -1,5 +1,5 @@
 ---
-name: veille
+name: emploi-veille
 description: >
   Lance une veille emploi complete avec 4 agents en parallele : scanner offres,
   scanner acteurs, analyse marche, puis synthese consolidee.
@@ -8,12 +8,12 @@ description: >
   La skill orchestre tout : creation de la team, lancement des agents, consolidation, rapport final.
 ---
 
-# /veille — Veille Emploi Multi-Agents
+# /emploi-veille — Veille Emploi Multi-Agents
 
 ## Contexte
 
 Lire le profil candidat dans `.claude/skills/emploi-veille/references/profil-candidat.md`.
-La veille decouvre des opportunites et les score. Elle ne produit ni CV, ni LM, ni pitch — c'est le role de `/new-cible`.
+La veille decouvre des opportunites et les score. Elle ne produit ni CV, ni LM, ni pitch — c'est le role de `/emploi-cible`.
 Les prompts des agents vivent dans `.claude/skills/emploi-veille/references/prompt-agent-*.md`. Les lire dynamiquement, jamais les dupliquer.
 
 ---
@@ -117,7 +117,7 @@ Lancer l'agent synthese :
 Lire `cibles/$DATE/rapport-veille-$DATE.md` et presenter a l'utilisateur :
 
 1. **Tableau** des cibles triees par score decroissant (score /12)
-2. **Recommandation** : pour chaque cible avec score >= 7/12, recommander `/new-cible [slug]`
+2. **Recommandation** : pour chaque cible avec score >= 7/12, recommander `/emploi-cible [slug]`
 3. **Demander a l'utilisateur** lesquelles il veut traiter
 
 Format de presentation :
@@ -126,7 +126,7 @@ Format de presentation :
 |---|-------|-------|---------|----------|
 | 1 | xxx   | 9/12  | ...     | ...      |
 
-Recommandation : lance `/new-cible xxx` pour les cibles >= 7/12.
+Recommandation : lance `/emploi-cible xxx` pour les cibles >= 7/12.
 Lesquelles on attaque ?
 ```
 
@@ -137,6 +137,6 @@ Lesquelles on attaque ?
 - **Prompts dynamiques** : toujours lire `.claude/skills/emploi-veille/references/prompt-agent-*.md` au runtime, jamais copier leur contenu dans cette skill
 - **Liste DEJA CIBLE** : toujours `ls candidatures/` au runtime, jamais de liste statique
 - **Resilience** : si 1 agent plante, on continue avec les 2 autres + la synthese
-- **Pas de CV/LM/pitch** : la veille decouvre, `/new-cible` traite
+- **Pas de CV/LM/pitch** : la veille decouvre, `/emploi-cible` traite
 - **Dossier de sortie** : `cibles/$DATE/` — 4 fichiers attendus
 - **Ton** : efficace, pas de blabla. Resultats, scores, recommandations.

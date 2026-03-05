@@ -34,7 +34,7 @@ Identifier les acteurs du secteur **{{SECTEURS}}** dans la zone **{{ZONE_GEO}}**
 
 ## Cibles deja dans le pipeline
 
-**Lister dynamiquement les sous-dossiers de `candidatures/`** pour construire la liste des cibles deja traitees. Les inclure dans le rapport avec le flag "DEJA CIBLE" mais ne pas les recommander pour `/new-cible`.
+**Lister dynamiquement les sous-dossiers de `candidatures/`** pour construire la liste des cibles deja traitees. Les inclure dans le rapport avec le flag "DEJA CIBLE" mais ne pas les recommander pour `/emploi-cible`.
 
 ---
 

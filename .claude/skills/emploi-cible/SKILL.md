@@ -1,13 +1,13 @@
 ---
-name: new-cible
+name: emploi-cible
 description: >
   Demarre le process complet pour une nouvelle cible de candidature (entreprise).
   Utilise cette skill des que l'utilisateur mentionne une nouvelle entreprise a prospecter,
-  dit "nouvelle cible", "je veux candidater chez X", "on attaque X", ou "/new-cible".
+  dit "nouvelle cible", "je veux candidater chez X", "on attaque X", ou "/emploi-cible".
   La skill orchestre tout : creation du dossier, recherche, CV, LM, pitch, contacts, suivi.
 ---
 
-# /new-cible — Nouvelle cible de candidature
+# /emploi-cible — Nouvelle cible de candidature
 
 ## Contexte
 

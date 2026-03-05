@@ -39,7 +39,7 @@ Le profil complet du candidat est injecte a la suite de ce prompt par l'orchestr
 | **Responsabilite** | Executant junior | Chef de projet standard | Architecte / resp. technique | Direction technique / CTO |
 | **{{AXE_SECTORIEL}}** | Aucun lien | {{AXE_SECTORIEL}} peripherique | {{AXE_SECTORIEL}} direct | {{AXE_SECTORIEL}} — coeur de metier |
 
-**Verdicts :** 10-12 = `/new-cible` immediat · 7-9 = approfondir · 4-6 = surveiller · 0-3 = ignorer
+**Verdicts :** 10-12 = `/emploi-cible` immediat · 7-9 = approfondir · 4-6 = surveiller · 0-3 = ignorer
 
 **Regle anti-inflation :** Score 3 = justifie par un fait verifiable. En cas de doute → niveau inferieur.
 
@@ -47,7 +47,7 @@ Le profil complet du candidat est injecte a la suite de ce prompt par l'orchestr
 
 ## Cibles deja dans le pipeline
 
-**Lister dynamiquement les sous-dossiers de `candidatures/`** pour construire la liste des cibles deja traitees. Ne pas recommander `/new-cible` pour ces cibles.
+**Lister dynamiquement les sous-dossiers de `candidatures/`** pour construire la liste des cibles deja traitees. Ne pas recommander `/emploi-cible` pour ces cibles.
 
 ---
 
@@ -68,7 +68,7 @@ Le profil complet du candidat est injecte a la suite de ce prompt par l'orchestr
 ### 3. Priorisation
 
 - Trier toutes les cibles par score consolide decroissant
-- Pour chaque cible >= 7/12 non deja ciblee : recommander **`/new-cible [slug]`**
+- Pour chaque cible >= 7/12 non deja ciblee : recommander **`/emploi-cible [slug]`**
 - Pour chaque cible deja ciblee avec score eleve : recommander de mettre a jour le suivi
 
 ---
@@ -100,7 +100,7 @@ Produire un fichier `cibles/{{DATE}}/rapport-veille-{{DATE}}.md` avec cette stru
 
 **Source :** offre / acteur / les deux
 **Offre :** [intitule + URL si applicable]
-**Action :** `/new-cible [slug]`
+**Action :** `/emploi-cible [slug]`
 
 ---
 
@@ -149,8 +149,8 @@ Pour configurer des alertes sur les job boards :
 
 ## Regles imperatives
 
-1. **Pas de pitchs, pas de CV, pas de strategie d'approche.** C'est le role de `/new-cible`.
+1. **Pas de pitchs, pas de CV, pas de strategie d'approche.** C'est le role de `/emploi-cible`.
 2. **Ne pas inventer de cibles.** Tout doit provenir des rapports agents.
 3. **Scores consolides :** si un agent a sur-score, ajuster vers le bas avec justification.
-4. **Le slug recommande pour `/new-cible`** doit etre un nom court en kebab-case (ex: `doctolib`, `cegedim`).
+4. **Le slug recommande pour `/emploi-cible`** doit etre un nom court en kebab-case (ex: `doctolib`, `cegedim`).
 5. **Honnetete sur les angles morts :** signaler ce qui n'a pas pu etre verifie.
